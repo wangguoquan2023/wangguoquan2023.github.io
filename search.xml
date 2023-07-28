@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>你好世界</title>
-    <url>/2023/07/23/helloworld/</url>
-    <content><![CDATA[<p>欢迎使用<a href="https://hexo.io/">Hexo</a>! 这是我创造的第一篇博客文章。 检查 <a href="https://hexo.io/docs/">hexo文档</a> . 假如遇到的任何问题, 你可以在 <a href="https://hexo.io/docs/troubleshooting.html">问题展示</a>找答案或者联系<a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="快速开始">快速开始</h2>
-<h3 id="创造一篇博客">创造一篇博客</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>了解更多: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="运行服务">运行服务</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>了解更多: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="生成基本文件">生成基本文件</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>了解更多: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="部署">部署</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>了解更多: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo介绍文档（非官方翻译）</title>
     <url>/2023/07/23/introduct/</url>
     <content><![CDATA[<h1>开始</h1>
@@ -53,24 +31,137 @@
   <entry>
     <title>markdown食用方法</title>
     <url>/2023/07/23/markdown/</url>
-    <content><![CDATA[<h1>写作</h1>
-<h2 id="标题">标题</h2>
-<h3 id="示例-比-小一级">示例(比##小一级)</h3>
-<h2 id="引用">引用</h2>
+    <content><![CDATA[<h1>基本语法</h1>
+<ul>
+<li>
+<p>标题语法</p>
+<table>
+<thead>
+<tr>
+<th>markdown语法</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td># 标题</td>
+<td><h1>标题</h1></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>换行语法</p>
+<table>
+<thead>
+<tr>
+<th>markdown语法</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>这是<br>例子</td>
+<td><p>这是<br>例子</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>强调语法</p>
+<table>
+<thead>
+<tr>
+<th>markdown语法</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>我是<strong>王国全</strong></td>
+<td>我是<strong>王国全</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>引用语法</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;这是个引用</span><br><span class="line">&gt;&gt;这是个套子</span><br><span class="line">&gt;&gt;- 我是其他元素</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>引用</p>
+<p>这是个引用</p>
+<blockquote>
+<p>这是个套子</p>
+<ul>
+<li>我是其他元素</li>
+</ul>
 </blockquote>
-<h1>插入</h1>
-<h2 id="待定项目">待定项目</h2>
-<p>-[ ]待定<br>
--[x]已定</p>
-<h2 id="数学公式">数学公式</h2>
-<h2 id="表格">表格</h2>
-<h2 id="脚注">脚注</h2>
-<h2 id="超链接">超链接</h2>
+</blockquote>
+</li>
+<li>
+<p>代码语法</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```</span><br><span class="line">我是代码语块</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>分割线语法</p>
+<hr>
+<p>上面是分割线</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>链接语法</p>
+<p><a href="https://markdown.com.cn">markdown语法</a></p>
+<p><strong><a href="https://markdown.com.cn">markdown</a></strong></p>
+<p><em><a href="https://markdown.com.cn">markdown</a></em></p>
+</li>
+<li>
+<p>图片语法</p>
+<p><a href="/images/404.jpg">图片</a></p>
+</li>
+<li>
+<p>转义字符语法</p>
+</li>
+<li>
+<p>内嵌HTML语法</p>
+</li>
+</ul>
+<h1>扩展语法</h1>
+<ul>
+<li>表格</li>
+<li>代码块</li>
+<li>脚注</li>
+<li>标题编号</li>
+<li>定义列表</li>
+<li>删除线</li>
+<li>任务列表语法</li>
+<li>使用emoji表情</li>
+<li>自动网页链接</li>
+</ul>
+<p><a href="https://markdown.com.cn">id</a>:</p>
 ]]></content>
       <tags>
         <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你好世界</title>
+    <url>/2023/07/23/helloworld/</url>
+    <content><![CDATA[<p>欢迎使用<a href="https://hexo.io/">Hexo</a>! 这是我创造的第一篇博客文章。 检查 <a href="https://hexo.io/docs/">hexo文档</a> . 假如遇到的任何问题, 你可以在 <a href="https://hexo.io/docs/troubleshooting.html">问题展示</a>找答案或者联系<a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="快速开始">快速开始</h2>
+<h3 id="创造一篇博客">创造一篇博客</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>了解更多: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="运行服务">运行服务</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>了解更多: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="生成基本文件">生成基本文件</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>了解更多: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="部署">部署</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>了解更多: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>技术</tag>
       </tags>
   </entry>
 </search>
